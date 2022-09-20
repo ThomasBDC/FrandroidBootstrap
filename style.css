@@ -1,0 +1,70 @@
+:root {
+    --color-dark-blue: #5770ff;
+    --color-dark-pink: #ff75b3;
+    --color-dark-orange: #ff7c6b;
+    --color-dark-purple: #b86bff;
+    --color-dark-green: #87e3cf;
+    --color-dark-blue-rgb: 87,112,255;
+    --color-dark-purple-rgb: 184,107,255;
+    --color-dark-pink-rgb: 255,117,179;
+    --color-dark-orange-rgb: 255,124,107;
+    --color-dark-body-background-color: var(--color-grey-darkest);
+    --color-dark-body-background-secondary-color: var(--color-grey-darker);
+    --color-dark-body: var(--color-white);
+    --color-dark-body-lighter: var(--color-grey-lighter);
+    --color-dark-body-lightest: var(--color-grey-lightest);
+    --color-dark-body-invert: var(--color-grey-darker);
+    --color-dark-background-lightest: var(--color-grey-darker);
+    --color-dark-background-lighter: var(--color-grey);
+    --color-dark-border: var(--color-grey);
+    --color-dark-input: var(--color-grey);
+    --color-dark-link: #5770ff;
+    --color-dark-link-dark: #425fff;
+    --color-dark-link-active: #425fff;
+    --gradient-dark-blue: linear-gradient(45deg,#425fff,#a95fdd);
+    --gradient-dark-blue-inverted: linear-gradient(-45deg,#425fff,#a95fdd);
+    --gradient-dark-blue-60-percent-inverted: linear-gradient(-45deg,#425fff,#425fff 60%,#a95fdd);
+    --gradient-dark-pink: linear-gradient(45deg,#be60a0,#be6472);
+    --gradient-dark-pink-inverted: linear-gradient(-45deg,#be60a0,#be6472);
+    --gradient-dark-radial-blue-purple: linear-gradient(45deg,rgba(var(--color-blue-rgb),0.5) 0%,rgba(137,82,254,.5) 100%);
+    --gradient-dark-radial-pink-orange: linear-gradient(45deg,rgba(251,96,117,.5) 0%,rgba(var(--color-pink-rgb),0.5) 100%,rgba(var(--color-pink-rgb),0.5) 100%);
+    --gradient-dark-radial-orange-pink: linear-gradient(45deg,rgba(var(--color-orange-rgb),0.5) 0%,rgba(250,92,129,.5) 100%);
+    --gradient-dark-circular-blue: linear-gradient(-135deg,rgba(146,80,251,.5) 0%,rgba(77,89,254,.5) 84%,rgba(var(--color-blue-rgb),0.5) 100%);
+}
+.list-item-categorie{
+    min-width: 5rem;
+    padding: 12px;
+}
+.list-item-categorie img{
+    max-width: 30px;
+    display: inline-block;
+}
+.list-item-categorie a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+    display: block;
+}
+
+.list-categorie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.list-item-categorie::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-dark-blue);
+    transition: width 0.2s ease-in-out;
+}
+
+.list-item-categorie:hover:after{
+    width: 2rem;
+}
