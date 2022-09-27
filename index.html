@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frandroid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body class="bg-dark text-light">
@@ -15,55 +16,100 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">
-            
-            <img style="width: 150px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
+            <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
           </a>
-          <div class="nav-item">
-            <a href="#" class="menuAlwaysShow">Actus</a>
+          <div class="nav-item ">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-info">Actus</a>
+          </div>
+          <div class="nav-item ">
+            <a href="#" class="menu-item-colored menuAlwaysShow text-danger">Tests</a>
           </div>
           <div class="nav-item">
-            <a href="#" class="menuAlwaysShow">Tests</a>
+            <a href="#" class="menu-item-colored menuAlwaysShow text-success">Bons plans</a>
           </div>
           <div class="nav-item">
-            <a href="#" class="menuAlwaysShow">Bons plans</a>
+            <a href="#" class="menu-item-colored menuAlwaysShow text-warning">Tutos</a>
           </div>
           <div class="nav-item">
-            <a href="#" class="menuAlwaysShow">Tutos</a>
-          </div>
-          <div class="nav-item">
-            <a href="#" class="menuAlwaysShow">Guides</a>
+            <a href="#" class="menu-item-colored menuAlwaysShow text-primary">Guides</a>
           </div>
           <div class="offcanvas offcanvas-start text-bg-dark" id="navbarSupportedContent">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas-header container">
+            <div>
+              <button type="button" class="btn-close btn-close-white me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
+            </div>
+            <div class="social-links text-primary">
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-rss"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-snapchat"></i>
+              <i class="bi bi-twitch"></i>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+          <div class="offcanvas-body container">
+            <div class="row row-cols-3 megaMenu">
+              <div class="megaMenu-categorie">
+                  <a href="#" class="megamenu-categorie-title">Titre</a>
+                  <ul>
+                    <li><a href="#">Sous menu</a></li>
+                    <li>
+                      <ul>
+                        <li><a href="#">Sous sous menu</a></li>
+                        <li><a href="#">Sous sous menu</a></li>
+                        <li><a href="#">Sous sous menu</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Liens</a></li>
+                  </ul>
+              </div>
+              <div class="megaMenu-categorie">
+                  <a href="#" class="megamenu-categorie-title">Titre</a>
+                  <ul>
+                    <li><a href="#">Sous menu</a></li>
+                    <li>
+                      <ul>
+                        <li><a href="#">Sous sous menu</a></li>
+                        <li><a href="#">Sous sous menu</a></li>
+                        <li><a href="#">Sous sous menu</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Liens</a></li>
+                  </ul>
+              </div>
+              <div class="megaMenu-categorie">
+                  <a href="#" class="megamenu-categorie-title">Titre</a>
+              </div>
+              <div class="megaMenu-categorie">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+                <ul>
+                  <li><a href="#">Sous menu</a></li>
                   <li>
-                    <hr class="dropdown-divider">
+                    <ul>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                      <li><a href="#">Sous sous menu</a></li>
+                    </ul>
                   </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-success" type="submit">Search</button>
-            </form>
+            </div>
+            <div class="megaMenu-categorie">
+              <a href="#" class="megamenu-categorie-title">Titre</a>
+              <ul>
+                <li><a href="#">Sous menu</a></li>
+                <li><a href="#">Liens</a></li>
+                <li><a href="#">Liens</a></li>
+                <li><a href="#">Liens</a></li>
+              </ul>
+          </div>
+          
+            </div>
           </div>
         </div>
       </nav>

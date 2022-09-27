@@ -34,6 +34,16 @@
 
     /* Changer la couleur du texte danger */
     --bs-danger-rgb: 255,117,179;
+    --bs-warning-rgb: 255,124,107;
+    --bs-success-rgb: 135,227,207;
+}
+
+/* modifier la largeur de mon container */
+/* Pour la taille XL */
+@media screen and (min-width: 1000px){
+    .container {
+        max-width: 1000px;
+    } 
 }
 
 .text-bg-danger {
@@ -90,4 +100,84 @@
 
 #navbarSupportedContent{
     width: 100%;
+}
+
+.menu-item-colored{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+.menu-item-colored::after{
+    width: 1rem;
+    content: "";
+    display: block;
+    margin-top: 5px;
+    height: 2px;
+    background: var(--gradient-dark-blue);
+    transition: width 0.2s ease-in-out;
+}
+
+.menu-item-colored:hover::after{
+    width: 100%;
+}
+
+.social-links i{
+    padding: 5px;
+    font-size:25px;
+}
+
+.social-links i:hover{
+    color:var(--color-dark-link);
+    cursor: pointer;
+}
+
+.megaMenu  a{
+    color: white;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.megaMenu  a:hover{
+    color:var(--color-dark-link);
+}
+
+.megaMenu  li{
+    list-style: none;
+}
+.megaMenu .megaMenu-categorie{
+    margin: 15px 0px;
+    font-size: 20px;
+}
+.megaMenu .megamenu-categorie-title{
+    color:var(--color-dark-link);
+    font-size: 25px;
+    font-weight:bold;
+    transition: 0.15s;
+}
+
+.megaMenu .megamenu-categorie-title::after{
+    content: '>';
+    margin-left: 5px;
+    transition: 0.15s;
+}
+
+.megaMenu .megamenu-categorie-title:hover{
+    color:white;
+}
+.megaMenu .megamenu-categorie-title:hover::after{
+    margin-left: 10px;
+}
+
+/* sous menu*/
+.megaMenu .megaMenu-categorie ul li{
+    font-weight: bolder;
+}
+/*sous sous menu*/
+.megaMenu .megaMenu-categorie ul li ul li {
+    font-weight: normal;    
+}
+.megaMenu .megaMenu-categorie ul li ul{
+    border-left: solid 1px gray;
+    margin-bottom: 10px;
 }
