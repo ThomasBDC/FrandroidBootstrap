@@ -36,6 +36,8 @@
     --bs-danger-rgb: 255,117,179;
     --bs-warning-rgb: 255,124,107;
     --bs-success-rgb: 135,227,207;
+
+    --radius-frandroid: 25px;
 }
 
 .btn-outline-danger {
@@ -290,6 +292,7 @@ h2{
 
 .article-card{
     transition: 0.15s;
+    height: 100%;
 }
 
 .article-card .card-body{
@@ -308,4 +311,20 @@ h2{
 
 .article-card:hover .overlay{
     background: linear-gradient(45deg, #8194ff, #bc74ff);
+}
+
+
+
+.border-frandroid{
+    border-radius: var(--radius-frandroid);
+}
+
+.border-frandroid-top{
+    border-top-left-radius: var(--radius-frandroid);
+    border-top-right-radius: var(--radius-frandroid);
+}
+
+.border-frandroid-bottom{
+    border-bottom-left-radius: var(--radius-frandroid);
+    border-bottom-right-radius: var(--radius-frandroid);
 }
