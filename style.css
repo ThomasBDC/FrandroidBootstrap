@@ -382,3 +382,15 @@ h2{
     margin-top: -70px;
     margin-left: 200px;
 }
+
+.btn-scrolltop{
+    z-index: 1000;
+    position: fixed;
+    bottom: 15px;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    display: none;
+    background-color: #2c3049;
+    box-shadow: 0.25rem 0.25rem 2rem rgba(87,112,255,.4);
+}

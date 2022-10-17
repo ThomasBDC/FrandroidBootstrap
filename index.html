@@ -9,7 +9,7 @@
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body class="bg-dark text-light">
-    <header>
+    <header id="header">
       <nav class="navbar navbar-dark bg-dark">
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -168,7 +168,7 @@
         </div>
       </div>
       <!-- Ligne sur les french days-->
-      <div class="row row-cols-2 row-cols-lg-4">
+      <div id="frenchDays" class="row row-cols-2 row-cols-lg-4">
         <div class="col" id="barcolorsBackgound">
           <!-- <img src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/eecc6ea811fd19d92d88.svg"/> -->
           <p id="pubResponsiveTitle" class="fw-bold d-block d-lg-none">French Days 2022</p>
@@ -281,9 +281,15 @@
       <div class="gradient-line"></div>
     </main>
 
+
+    
     <footer>
 
     </footer>
+
+    <a href="#header" class="btn-scrolltop btn text-primary rounded-pill" id="scrollTop">
+      Haut de page <i class="bi bi-chevron-up"></i>      
+    </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
