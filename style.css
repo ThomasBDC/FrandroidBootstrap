@@ -203,11 +203,16 @@ a{
 .list-buttons{
     display: flex;
     flex-wrap: wrap;
+    overflow-x: auto;
 }
 
 
 .list-buttons div{
     margin:5px;
+}
+
+.list-buttons a{
+    white-space: nowrap;
 }
 
 h2{
