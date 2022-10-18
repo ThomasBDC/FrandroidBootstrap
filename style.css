@@ -361,7 +361,7 @@ h2{
 .selection-redaction .selection-redaction-text{
     width: 350px;
     height: 200px;
-    max-width: 50%;
+    /* max-width: 50%; */
     background-color: #2c3049;
     padding-left: 150px;
     padding-right: 15px;
@@ -427,5 +427,30 @@ h2{
     }
     .list-categorie{
         justify-content: flex-start;
+    }
+
+
+    .selection-redaction .selection-redaction-img{
+        width: 300px;
+        max-width: 70%;
+        height: 150px;
+        display: inline-block;
+        margin-top: 0px;
+    }
+    
+    .selection-redaction .selection-redaction-text{
+        width: auto;
+        height: auto;
+        padding-left: 15px;
+        padding-top: 150px;
+        margin-left: 170px;
+        margin-top: -130px;
+        z-index: 1;
+        display: inline-block;
+    }
+    
+    
+    .gradient-line{
+        background: transparent;
     }
 } 
