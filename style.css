@@ -395,3 +395,28 @@ h2{
     background-color: #2c3049;
     box-shadow: 0.25rem 0.25rem 2rem rgba(87,112,255,.4);
 }
+
+@media screen and (min-width: 768px){
+    .navbarLine{
+        width: auto;
+    }
+    .nav-item {
+        padding: 10px;
+    }
+} 
+
+@media screen and (min-width: 992px){
+
+    .nav-item a{
+        font-size: 1.5em;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    .navbarLine{
+        width: 100%;
+    }
+    .nav-item {
+        padding: 3px;
+    }
+} 
