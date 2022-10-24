@@ -167,6 +167,12 @@ a{
     margin: 15px 0px;
     font-size: 20px;
 }
+
+.megaMenu .megaMenu-categorie .megaMenu-categorie-content{
+    width: fit-content;
+    margin: auto;
+}
+
 .megaMenu .megamenu-categorie-title{
     color:var(--color-dark-link);
     font-size: 25px;
