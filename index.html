@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet"/>
   </head>
-  <body class="bg-dark text-light">
+  <body class="text-bg-dark">
     <header id="header">
       <nav class="navbar navbar-dark bg-dark">
         <div class="container">
           <div class="navbarLine navbar navbar-dark">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#settingsModal">
+              <i class="bi bi-sliders"></i>
             </button>
             <a class="navbar-brand mx-3" href="#">
               <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
@@ -245,7 +248,7 @@
             </a>
           </article> -->
           <article class="p-2 col-12 col-lg-7">
-            <div class="card border-dark bg-transparent article-card shadow" style="width: 100%;">
+            <div class="card border-none bg-transparent article-card shadow border-frandroid" style="width: 100%;">
                 <div class="outer">
                   <img src="img/G-pixel.jpg" class="card-img-top border-frandroid" alt="...">
                   <div class="overlay border-frandroid">
@@ -263,7 +266,7 @@
                   <div class="overlay border-frandroid-top">
                   </div>
                 </div>
-              <div class="card-body  border-frandroid-bottom">
+              <div class="card-body dark border-frandroid-bottom">
                 <h5 class="card-title fs-6">Overwatch 2 : quelles configurations PC pour jouer ?</h5>
               </div>
             </div>
@@ -275,7 +278,7 @@
                 <div class="overlay border-frandroid-top">
                 </div>
               </div>
-              <div class="card-body border-frandroid-bottom">
+              <div class="card-body dark border-frandroid-bottom">
                 <h5 class="card-title fs-6">Série limitée : ce forfait mobile 50 Go est l’offre à saisir du ...</h5>
               </div>
             </div>
@@ -287,7 +290,7 @@
       <!-- Sélection de la rédaction -->
       <div class="selection-redaction border-frandroid my-3">
         <img class="border-frandroid selection-redaction-img" src="img/telephone-relais.jpg" />
-        <div class="border-frandroid selection-redaction-text">
+        <div class="border-frandroid selection-redaction-text dark">
           <h6>La sélection de la rédaction</h6>
           <p>Cet hiver, les réseaux de téléphonie mobile risquent d'être coupés : voici ce qu'il faut savoir</p>
         </div>
@@ -304,6 +307,31 @@
     <a href="#header" class="btn-scrolltop btn text-primary rounded-pill" id="scrollTop">
       Haut de page <i class="bi bi-chevron-up"></i>      
     </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="settingsModalLabel">Réglages</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-cols-2 justify-content-center">
+              <div class="ChangeThemeDiv" data-theme="light">
+                <img src="img/light.svg"/>
+                Clair
+              </div>
+              <div class="ChangeThemeDiv" data-theme="dark">
+                <img src="img/Dark.svg"/>
+                Sombre
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
